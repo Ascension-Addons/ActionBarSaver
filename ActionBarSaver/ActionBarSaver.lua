@@ -175,7 +175,7 @@ function ABS:RestoreProfile(name, overrideClass)
 		self:Print(string.format(L["No profile with the name \"%s\" exists."], set))
 		return
 	elseif( InCombatLockdown() ) then
-		self:Print(String.format(L["Unable to restore profile \"%s\", you are in combat."], set))
+		self:Print(string.format(L["Unable to restore profile \"%s\", you are in combat."], set))
 		return
 	end
 	
